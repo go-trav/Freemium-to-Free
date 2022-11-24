@@ -16,7 +16,7 @@ Coded by www.creative-tim.com
 import { useState } from "react";
 
 // react-router-dom components
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // @mui material components
 import Card from "@mui/material/Card";
@@ -36,6 +36,8 @@ import curved6 from "assets/images/curved-images/curved14.jpg";
 
 function Onboard() {
   const [agreement, setAgremment] = useState(true);
+
+  const nav = useNavigate();
 
   const handleSetAgremment = () => setAgremment(!agreement);
 
@@ -82,7 +84,7 @@ function Onboard() {
               </SoftTypography>
             </SoftBox>
             <SoftBox mt={4} mb={1}>
-              <SoftButton variant="gradient" color="dark" fullWidth>
+              <SoftButton onClick={() => nav('/dashboard')} variant="gradient" color="dark" fullWidth>
                 Submit
               </SoftButton>
             </SoftBox>
