@@ -29,9 +29,9 @@ function OrdersOverview() {
     <Card className="h-100">
       <SoftBox pt={3} px={3}>
         <SoftTypography variant="h6" fontWeight="medium">
-          Orders overview
+          Notifications
         </SoftTypography>
-        <SoftBox mt={1} mb={2}>
+        {/* <SoftBox mt={1} mb={2}>
           <SoftTypography variant="button" color="text" fontWeight="regular">
             <SoftTypography display="inline" variant="body2" verticalAlign="middle">
               <Icon sx={{ fontWeight: "bold", color: ({ palette: { success } }) => success.main }}>
@@ -44,25 +44,25 @@ function OrdersOverview() {
             </SoftTypography>{" "}
             this month
           </SoftTypography>
-        </SoftBox>
+        </SoftBox> */}
       </SoftBox>
       <SoftBox p={2}>
         <TimelineItem
           color="success"
           icon="notifications"
-          title="$2400, Design changes"
+          title="100 People's Survey Data"
           dateTime="22 DEC 7:20 PM"
         />
         <TimelineItem
           color="error"
           icon="inventory_2"
-          title="New order #1832412"
+          title="New campaign #1832412"
           dateTime="21 DEC 11 PM"
         />
         <TimelineItem
           color="info"
           icon="shopping_cart"
-          title="Server payments for April"
+          title="Platform payments for April"
           dateTime="21 DEC 9:34 PM"
         />
         <TimelineItem

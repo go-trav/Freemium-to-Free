@@ -48,48 +48,46 @@ export default function data() {
   return {
     columns: [
       { name: "companies", align: "left" },
-      { name: "members", align: "left" },
-      { name: "budget", align: "center" },
+      { name: "budget", align: "left" },
+      { name: "reach", align: "center" },
       { name: "completion", align: "center" },
+      { name: "download", align: "center" },
     ],
 
     rows: [
       {
         companies: [logoXD, "Soft UI XD Version"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team1, "Ryan Tompson"],
-              [team2, "Romina Hadid"],
-              [team3, "Alexander Smith"],
-              [team4, "Jessica Doe"],
-            ])}
-          </SoftBox>
-        ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $14,000
+            ₹150000
+          </SoftTypography>
+        ),
+        reach: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+             30000
           </SoftTypography>
         ),
         completion: (
           <SoftBox width="8rem" textAlign="left">
-            <SoftProgress value={60} color="info" variant="gradient" label={false} />
+            <SoftProgress value={80} color="info" variant="gradient" label={false} />
           </SoftBox>
+        ),
+        download: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+             Survey Data
+          </SoftTypography>
         ),
       },
       {
         companies: [logoAtlassian, "Add Progress Track"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team2, "Romina Hadid"],
-              [team4, "Jessica Doe"],
-            ])}
-          </SoftBox>
-        ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $3,000
+            ₹50000
+          </SoftTypography>
+        ),
+        reach: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+            200
           </SoftTypography>
         ),
         completion: (
@@ -97,43 +95,45 @@ export default function data() {
             <SoftProgress value={10} color="info" variant="gradient" label={false} />
           </SoftBox>
         ),
+        download: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+             Survey Data
+          </SoftTypography>
+        ),
       },
       {
-        companies: [logoSlack, "Fix Platform Errors"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team1, "Ryan Tompson"],
-              [team3, "Alexander Smith"],
-            ])}
-          </SoftBox>
-        ),
+        companies: [logoSlack, "Stock Platform"],
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            Not set
+            ₹300000
+          </SoftTypography>
+        ),
+        reach: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+            10000
           </SoftTypography>
         ),
         completion: (
           <SoftBox width="8rem" textAlign="left">
             <SoftProgress value={100} color="success" variant="gradient" label={false} />
           </SoftBox>
+        ),
+        download: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+             Survey Data
+          </SoftTypography>
         ),
       },
       {
         companies: [logoSpotify, "Launch our Mobile App"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team4, "Jessica Doe"],
-              [team3, "Alexander Smith"],
-              [team2, "Romina Hadid"],
-              [team1, "Ryan Tompson"],
-            ])}
-          </SoftBox>
-        ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $20,500
+            ₹1500000
+          </SoftTypography>
+        ),
+        reach: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+            50000
           </SoftTypography>
         ),
         completion: (
@@ -141,44 +141,56 @@ export default function data() {
             <SoftProgress value={100} color="success" variant="gradient" label={false} />
           </SoftBox>
         ),
+        download: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+             Survey Data
+          </SoftTypography>
+        ),
       },
       {
         companies: [logoJira, "Add the New Pricing Page"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([[team4, "Jessica Doe"]])}
-          </SoftBox>
-        ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $500
+            ₹30000
+          </SoftTypography>
+        ),
+        reach: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+            1000
           </SoftTypography>
         ),
         completion: (
           <SoftBox width="8rem" textAlign="left">
-            <SoftProgress value={25} color="info" variant="gradient" label={false} />
+            <SoftProgress value={100} color="success" variant="gradient" label={false} />
           </SoftBox>
+        ),
+        download: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+             Survey Data
+          </SoftTypography>
         ),
       },
       {
         companies: [logoInvesion, "Redesign New Online Shop"],
-        members: (
-          <SoftBox display="flex" py={1}>
-            {avatars([
-              [team1, "Ryan Tompson"],
-              [team4, "Jessica Doe"],
-            ])}
-          </SoftBox>
-        ),
         budget: (
           <SoftTypography variant="caption" color="text" fontWeight="medium">
-            $2,000
+            ₹25000
+          </SoftTypography>
+        ),
+        reach: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+            835
           </SoftTypography>
         ),
         completion: (
           <SoftBox width="8rem" textAlign="left">
-            <SoftProgress value={40} color="info" variant="gradient" label={false} />
+            <SoftProgress value={100} color="success" variant="gradient" label={false} />
           </SoftBox>
+        ),
+        download: (
+          <SoftTypography variant="caption" color="text" fontWeight="medium">
+             Survey Data
+          </SoftTypography>
         ),
       },
     ],
