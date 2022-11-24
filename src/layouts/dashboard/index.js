@@ -54,29 +54,24 @@ function Dashboard() {
           <Grid container spacing={3}>
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's money" }}
-                count="$53,000"
-                percentage={{ color: "success", text: "+55%" }}
-                icon={{ color: "info", component: "paid" }}
+                title={{ text: "Total Campaigns" }}
+                count="5"
               />
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "today's users" }}
-                count="2,300"
-                percentage={{ color: "success", text: "+3%" }}
-                icon={{ color: "info", component: "public" }}
+                title={{ text: "Total Reach" }}
+                count="105K"
+                percentage={{ color: "success", text: "+96%" }}
               />
             </Grid>
             <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
-                title={{ text: "new clients" }}
-                count="+3,462"
-                percentage={{ color: "error", text: "-2%" }}
-                icon={{ color: "info", component: "emoji_events" }}
+                title={{ text: "CPI" }}
+                count="₹30"
               />
             </Grid>
-            <Grid item xs={12} sm={6} xl={3}>
+            {/* <Grid item xs={12} sm={6} xl={3}>
               <MiniStatisticsCard
                 title={{ text: "sales" }}
                 count="$103,430"
@@ -86,7 +81,7 @@ function Dashboard() {
                   component: "shopping_cart",
                 }}
               />
-            </Grid>
+            </Grid> */}
           </Grid>
         </SoftBox>
         <SoftBox mb={3}>
@@ -101,12 +96,12 @@ function Dashboard() {
         </SoftBox>
         <SoftBox mb={3}>
           <Grid container spacing={3}>
-            <Grid item xs={12} lg={5}>
+             <Grid item xs={12} lg={5}>
               <ReportsBarChart
-                title="active users"
+                title="Campaign Name 1"
                 description={
                   <>
-                    (<strong>+23%</strong>) than last week
+                    Campaign ID(<strong>23112414</strong>)
                   </>
                 }
                 chart={chart}
@@ -115,16 +110,16 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} lg={7}>
               <GradientLineChart
-                title="Sales Overview"
+                title="Campaign Overview"
                 description={
                   <SoftBox display="flex" alignItems="center">
                     <SoftBox fontSize={size.lg} color="success" mb={0.3} mr={0.5} lineHeight={0}>
                       <Icon className="font-bold">arrow_upward</Icon>
                     </SoftBox>
                     <SoftTypography variant="button" color="text" fontWeight="medium">
-                      4% more{" "}
+                      24% more reach{" "}
                       <SoftTypography variant="button" color="text" fontWeight="regular">
-                        in 2021
+                        Today
                       </SoftTypography>
                     </SoftTypography>
                   </SoftBox>
