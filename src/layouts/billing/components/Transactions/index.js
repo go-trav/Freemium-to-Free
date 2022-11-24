@@ -63,18 +63,18 @@ function Transactions() {
           sx={{ listStyle: "none" }}
         >
           <Transaction
-            color="error"
+            color="success"
             icon="arrow_downward"
-            name="Netflix"
+            name="Add Progress Track"
             description="27 March 2020, at 12:30 PM"
-            value="- $ 2,500"
+            value="- ₹ 2,500"
           />
           <Transaction
-            color="success"
+            color="error"
             icon="arrow_upward"
-            name="Apple"
+            name="Add Progress Track"
             description="27 March 2020, at 04:30 AM"
-            value="+ $ 2,000"
+            value="+ ₹ 2,000"
           />
         </SoftBox>
         <SoftBox mt={1} mb={2}>
@@ -98,28 +98,28 @@ function Transactions() {
           <Transaction
             color="success"
             icon="arrow_upward"
-            name="Stripe"
+            name="Stock Platform"
             description="26 March 2020, at 13:45 PM"
-            value="+ $ 750"
+            value="+ ₹ 300000"
           />
           <Transaction
             color="success"
             icon="arrow_upward"
-            name="HubSpot"
+            name="Add the New Pricing Page"
             description="26 March 2020, at 12:30 PM"
-            value="+ $ 1,000"
+            value="+ ₹ 30000"
           />
           <Transaction
             color="success"
             icon="arrow_upward"
-            name="Creative Tim"
+            name="Redesign New Online Shop"
             description="26 March 2020, at 08:30 AM"
-            value="+ $ 2,500"
+            value="+ ₹ 25000"
           />
           <Transaction
             color="dark"
             icon="priority_high"
-            name="Webflow"
+            name="Launch our Mobile App"
             description="26 March 2020, at 05:00 AM"
             value="Pending"
           />
