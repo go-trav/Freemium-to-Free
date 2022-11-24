@@ -74,7 +74,7 @@ function MiniStatisticsCard({ bgColor, title, count, percentage, icon, direction
                 </SoftTypography>
               </SoftBox>
             </Grid>
-            {direction === "right" ? (
+            {direction === "right" && icon != undefined ? (
               <Grid item xs={4}>
                 <SoftBox
                   variant="gradient"
